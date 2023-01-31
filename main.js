@@ -21,40 +21,40 @@
 
                 document.body.style.overflow = 'unset'
 
-                if(showingIframe == false) {
+                // if(showingIframe == false) {
                 
-                    iframeCtnr.innerHTML = '<iframe style="border:none;width:100%;" height="900px" src="https://notionforms.io/forms/make-your-order-kokokotsu"></iframe>'
+                //     iframeCtnr.innerHTML = '<iframe style="border:none;width:100%;" height="900px" src="https://notionforms.io/forms/make-your-order-kokokotsu"></iframe>'
     
-                    showingIframe = true;
+                //     showingIframe = true;
     
-                    workWithUsCtnr.classList.remove('show_side_content')
-                    eventsCtnr.classList.remove('show_side_content')
-                    contactCtnr.classList.remove('show_side_content')
-                    aboutUsCtnr.classList.remove('show_side_content')
-                }
+                //     workWithUsCtnr.classList.remove('show_side_content')
+                //     eventsCtnr.classList.remove('show_side_content')
+                //     contactCtnr.classList.remove('show_side_content')
+                //     aboutUsCtnr.classList.remove('show_side_content')
+                // }
             }
         }
 
         let showingIframe = false;
 
-        orderCTA.addEventListener('click', function() {
+        // orderCTA.addEventListener('click', function() {
 
-            if(showingIframe == false) {
-                showingSideCtnr = false;
+        //     if(showingIframe == false) {
+        //         showingSideCtnr = false;
                 
-                iframeCtnr.innerHTML = '<iframe style="border:none;width:100%;" height="900px" src="https://notionforms.io/forms/make-your-order-kokokotsu"></iframe>'
+        //         iframeCtnr.innerHTML = '<iframe style="border:none;width:100%;" height="900px" src="https://notionforms.io/forms/make-your-order-kokokotsu"></iframe>'
 
-                showingIframe = true;
+        //         showingIframe = true;
 
-                workWithUsCtnr.classList.remove('show_side_content')
-                aboutUsCtnr.classList.remove('show_side_content')
-                eventsCtnr.classList.remove('show_side_content')
-                contactCtnr.classList.remove('show_side_content')
-            }
+        //         workWithUsCtnr.classList.remove('show_side_content')
+        //         aboutUsCtnr.classList.remove('show_side_content')
+        //         eventsCtnr.classList.remove('show_side_content')
+        //         contactCtnr.classList.remove('show_side_content')
+        //     }
             
-            toggleSlide()
+        //     toggleSlide()
 
-        })
+        // })
 
         const secondaryBts = document.querySelectorAll(".nav_bts div[role='button']")
 
@@ -124,8 +124,8 @@ document.onreadystatechange = function () {
         })
     }
 
-        iframeCtnr.innerHTML = '<iframe style="border:none;width:100%;" height="900px" src="https://notionforms.io/forms/make-your-order-kokokotsu"></iframe>'
-        showingIframe = true;
+        // iframeCtnr.innerHTML = '<iframe style="border:none;width:100%;" height="900px" src="https://notionforms.io/forms/make-your-order-kokokotsu"></iframe>'
+        // showingIframe = true;
     }
 
 }
@@ -169,3 +169,32 @@ document.addEventListener('touchend', e => {
   touchendY = e.changedTouches[0].screenY
   checkDirection()
 })
+
+
+
+// ALLERGENS BUTTON
+
+const allergensBt = document.querySelector('.allergens_bt')
+
+const allergensCtnr = document.querySelector('.allergens_ctnr')
+const exitArea = document.querySelector('.exit_area')
+
+let showingExitArea = false;
+
+allergensBt.addEventListener('click', checkExitArea)
+
+function checkExitArea() {
+    if(showingExitArea == false) {
+        exitArea.style.display = 'unset';
+        allergensCtnr.style.display = 'unset';
+
+        showingExitArea = true;
+    } else {
+        exitArea.style.display = 'none';
+        allergensCtnr.style.display = 'none';
+
+        showingExitArea = false;
+    }
+}
+
+exitArea.addEventListener('click', checkExitArea)

@@ -85,11 +85,51 @@
                                 <p>We're not here to lie, using chopsticks does make you look cool... but Gyoza do taste better if just grab them with your hands.</p>
 
                                 <ul class="flavours">
-                                    <li>Pork</li>
-                                    <li>Chicken</li>
-                                    <li>Prawn</li>
-                                    <li>Duck</li>
-                                    <li>Vegetable</li>
+                                    <li>
+                                        <div class="flex">
+                                            Pork
+                                            <div class="tooltip" role="button">
+                                                <div>Allergens: Wheat, Sesame<br>May contain: Crustaceans, Eggs, Soya
+                                                </div>
+                                            </div>
+                                        </div> 
+                                    </li>
+
+                                    <li>
+                                        <div class="flex">
+                                            Chicken
+                                            <div class="tooltip" role="button">
+                                                <div>Allergens: Wheat, Soya, Sesame</div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="flex">
+                                            Prawn
+                                            <div class="tooltip" role="button">
+                                                <div>Allergens: Crustaceans, Wheat, Sesame, Eggs</div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="flex">
+                                            Duck
+                                            <div class="tooltip" role="button">
+                                                <div>Allergens: Wheat, Soya, Sesame</div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="flex">
+                                            Vegetable
+                                            <div class="tooltip" role="button">
+                                                <div>Allergens: Wheat, Soya, Sesame</div>
+                                            </div>
+                                        </div>
+                                    </li>
                                 </ul>
                             </sub>
                         </li>
@@ -99,7 +139,7 @@
                     <div class="sticky_ctnr">
     
                         <div class="order_cta" role="button">
-                            <span>Order now 🥟</span>
+                            <span>Make your order at the checkout 🥟</span>
                         </div>
                     </div>
 
@@ -261,6 +301,8 @@
 
                     <!-- <div role="button" class="clear_cart" onclick="clearForm()">Clear<br>order</div> -->
 
+                    <div class="allergens_bt" role="button">Allergen Information</div>
+
                     <div class="back_to_menu" role="button" onclick="toggleSlide()">
                         <div>
                             <span></span>
@@ -315,6 +357,36 @@
         <div class="gyoza char1"></div>
         <div class="gyoza"></div>
         <div class="gyoza"></div>
+    </div>
+
+    
+
+    <div class="exit_area" title="close"></div>
+
+    <div class="allergens_ctnr">
+        <p>Pork Gyoza</p>
+        <p>Allergens: Wheat, Sesame</p>
+        <p>May contain: Crustaceans, Eggs, Soya</p>
+
+        <div class="divider"></div>
+
+        <p>Chicken Gyoza</p>
+        <p>Allergens: Wheat, Soya, Sesame</p>
+
+        <div class="divider"></div>
+        
+        <p>Prawn Gyoza</p>
+        <p>Allergens: Crustaceans, Wheat, Sesame, Eggs</p>
+
+        <div class="divider"></div>
+        
+        <p>Duck Gyoza</p>
+        <p>Allergens: Wheat, Soya, Sesame</p>
+
+        <div class="divider"></div>
+        
+        <p>Vegetable Gyoza</p>
+        <p>Allergens: Wheat, Soya, Sesame</p>
     </div>
 
 </body>
