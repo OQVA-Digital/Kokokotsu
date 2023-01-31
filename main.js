@@ -182,6 +182,7 @@ const exitArea = document.querySelector('.exit_area')
 let showingExitArea = false;
 
 allergensBt.addEventListener('click', checkExitArea)
+exitArea.addEventListener('click', checkExitArea)
 
 function checkExitArea() {
     if(showingExitArea == false) {
@@ -196,5 +197,3 @@ function checkExitArea() {
         showingExitArea = false;
     }
 }
-
-exitArea.addEventListener('click', checkExitArea)
