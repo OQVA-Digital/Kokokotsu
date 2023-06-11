@@ -2,7 +2,7 @@
 
 <img src="assets/gyoza-san-01.gif" width="250" height="250" align="left"/>	
 
-## Japan in a pan! 🥟
+## Japan in a pan 🥟
 
 ### https://kokokotsu.co/
 
